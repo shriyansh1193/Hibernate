@@ -7,10 +7,12 @@ import javax.transaction.Transactional;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Repository;
 import org.studyeasy.app.model.Users;
 
 @Repository
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class DAOImpl implements UsersDAO {
 
 	@Autowired
