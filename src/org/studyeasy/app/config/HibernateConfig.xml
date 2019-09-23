@@ -36,11 +36,6 @@
 		<property name="dataSource" ref="myDataSource" />
 		<property name="packagesToScan"
 			value="org.studyeasy.app.model" />
-		<property name="annotatedClasses">
-			<list>
-				<value>org.studyeasy.app.DAO.DAOImpl</value>
-			</list>
-		</property>
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
