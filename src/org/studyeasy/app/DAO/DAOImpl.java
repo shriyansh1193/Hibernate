@@ -19,7 +19,6 @@ public class DAOImpl implements UsersDAO {
 	private SessionFactory sessionFactory;
 
 	@Override
-	@Transactional
 	public List<Users> getUsers() {
 		Session session = sessionFactory.getCurrentSession();
 
